@@ -9,8 +9,21 @@ Ce projet automatise la collecte, le stockage et l’analyse de données de marc
 - `dashboard/` : Tableau de bord (à venir)
 
 ## Lancement rapide
-1. Exécute `python scripts/fetch_crypto.py`
-2. Explore les données dans le notebook `notebooks/analysis.ipynb`
+
+### 1. Crée un environnement virtuel Python (recommandé)
+```bash
+python3 -m venv venv
+source venv/bin/activate
+pip install -r requirements.txt
+```
+
+### 2. Exécute le pipeline ETL
+```bash
+python scripts/fetch_crypto.py
+```
+
+### 3. Explore les données dans le notebook
+Ouvre `notebooks/analysis.ipynb` dans Jupyter ou VS Code.
 
 ## À venir
 - Automatisation (cron ou boucle Python)
